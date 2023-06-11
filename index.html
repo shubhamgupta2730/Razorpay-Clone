@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RazorPay</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- navigation bar section starts -->
@@ -107,7 +108,9 @@
     <!-- Hero section starts -->
     <section class="relative bg-deepBlue">
       <!-- div for hero section contians left and right part of page -->
-      <div class="w-10/12 flex flex-row justify-between items-center mx-auto max-w-[1080px]">
+      <div
+        class="w-10/12 max-w-[1080px] flex sm:flex-col lg:flex-row justify-between items-center mx-auto"
+      >
         <!-- left part -->
         <div class="space-y-8">
           <h1
@@ -127,13 +130,136 @@
           </button>
         </div>
         <!-- right part -->
-        <img src="/Images/hero-illustration.jpg" alt="" class="w-full max-w-[680px]"/>
+        <img
+          src="/Images/hero-illustration.jpg"
+          alt=""
+          class="w-full max-w-[680px]"
+        />
       </div>
       <!-- shape part -->
-      <div class="absolute left-0 right-0 w-[103%] ">
-        <img src="/Images/hero-shape.svg" alt="" class="w-full object-fill "/>
+      <div class="absolute w-[100%] left-0 right-0 overflow-hidden">
+        <img
+          src="/Images/hero-shape.svg"
+          alt=""
+          class="object-fill w-full overflow-hidden"
+        />
       </div>
     </section>
     <!-- hero section ends -->
+
+    <!-- features section starts -->
+    <section class="relative mt-[130px] overflow-hidden">
+      <img
+        src="/Images/feature-section1-dottedrows.png"
+        alt=""
+        loading="lazy"
+        width="233"
+        height="167"
+        class="absolute -top-[8rem] left-[10rem]"
+      />
+      <img
+        src="/Images/feature-section1-dottedrows.png"
+        alt=""
+        loading="lazy"
+        width="233"
+        height="167"
+        class="absolute top-[3rem] right-[0] inline-block rotate-[180deg]"
+      />
+
+      <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+        <!-- heading -->
+        <h2
+          class="font-mullish text-center text-2xl leading-[1.2] font-extrabold"
+        >
+          Accept Payments with Payment Suite
+        </h2>
+        <!-- underline -->
+        <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+        <!-- content box -->
+        <div class="w-full bg-white flex rounded-md relative p-10 py-12 border">
+          <!-- left part -->
+          <div class="flex flex-col justify-between w-full">
+            <!-- heading -->
+            <h3
+              class="font-mullish text-[28px] leading-10 font-bold max-w-[500px]"
+            >
+              Supercharge your business with all powerful
+              <span class="text-lightBlue">Payment Gateway</span>
+            </h3>
+            <!-- list items -->
+            <ul class="space-y-2">
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check" class="text-greenLight"></i>
+                <span>100+ Payment Methods</span>
+              </li>
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check" class="text-greenLight"></i>
+
+                <span>Industry leading Success Rate</span>
+              </li>
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check" class="text-greenLight"></i>
+
+                <span>Superior Checkout Experience</span>
+              </li>
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check" class="text-greenLight"></i>
+
+                <span>Easy to Integrate</span>
+              </li>
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check" class="text-greenLight"></i>
+
+                <span>Instant Settlement from Day 1</span>
+              </li>
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check" class="text-greenLight"></i>
+
+                <span>In-depth Reporting and Insights</span>
+              </li>
+            </ul>
+
+            <!-- for buttons -->
+            <div class="flex flex-row items-center space-x-4 pt-5">
+              <button
+                class="bg-lightBlue w-git text-white py-[14px] px-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 translate-all duration-200"
+              >
+                Sign Up Now
+              </button>
+              <!-- hyperlink -->
+              <div class="flex items-center cursor-pointer group">
+                <a
+                  href="#"
+                  class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200"
+                  >Know More</a
+                >
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 group-hover:text-gray-50 transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- right part -->
+          <!-- image -->
+          <img
+            src="/Images/payment-suite.png"
+            alt=""
+            class="absolute max-w-[500px] right-0 bottom-0"
+          />
+        </div>
+      </div>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- features section ends -->
+
+    <!-- box section starts -->
+
+    
+
+
   </body>
 </html>
